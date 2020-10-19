@@ -1,0 +1,1 @@
+export {default as FaviconComponent} from './components/FaviconComponent'

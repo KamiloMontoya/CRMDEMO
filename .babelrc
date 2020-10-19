@@ -1,0 +1,47 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread",
+    "@babel/plugin-transform-async-to-generator",
+    "@babel/plugin-proposal-async-generator-functions",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "extensions": [
+          ".tsx",
+          ".ts",
+          ".jsx",
+          ".js",
+          ".json"
+        ],
+        "alias": {
+          "app_assets": "./src/assets",
+          "app_components": "./src/components",
+          "app_config": "./src/config",
+          "app_providers": "./src/providers",
+          "app_reducers": "./src/reducers",
+          "app_resources": "./src/resources",
+          "app_routers": "./src/routers",
+          "app_services": "./src/services",
+          "app_storage": "./src/storage",
+          "app_styles": "./src/styles",
+          "app_utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}

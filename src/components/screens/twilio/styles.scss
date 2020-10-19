@@ -1,0 +1,19 @@
+.twilio-section{
+  width:100%;
+  height:650px;
+  overflow:scroll;     /* if you don't want a scrollbar, set to hidden */
+  overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
+
+  /* resize and min-height are optional, allows user to resize viewable area */
+  -webkit-resize:vertical;
+  -moz-resize:vertical;
+  resize:vertical;
+  min-height:650px;
+
+  iframe{
+    /* determines where the bottom of the page cuts off */
+    margin-left:-65px;  /* clipping top of page */
+    margin-top:-46px;  /* clipping top of page */
+
+  }
+}

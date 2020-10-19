@@ -1,0 +1,141 @@
+.navbar {
+  background-color: white;
+
+  .navbar-brand {
+    img {
+      max-height: 40px;
+      min-width: 40px;
+    }
+  }
+  .navbar-expanded{
+    margin-left: 18%;
+    transition: ease all .25s;
+  }
+
+  .navbar-collapsed{
+    transition: ease all .25s;
+  }
+
+  .navbar-left {
+    width: 40px;
+    transition: ease all .25s;
+    position: relative;
+    background-color:red;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-right: 1px solid #eaeaea;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: -.65rem 0;
+    }
+
+    .navbar-brand {
+      img {
+        width: 40%;
+        max-height: 40px;
+      }
+    }
+
+    &.navbar-collapsed {
+      width:56px;
+    }
+  }
+
+  #navbarDropdown{
+    box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .sidebar-toggler {
+    box-shadow: none;
+  }
+
+  .navbar-collapse {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    .navbar-nav {
+      .btn-dropdown {
+        background-color:white;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  .float-menu-icon{
+    height: 24px;
+    width: 24px;
+    fill:#4F4F4F;
+    transition: all .25s ease;
+  }
+  .float-menu-icon:hover{
+    cursor:pointer;
+  }
+  .float-menu-unrolled{
+    margin-left: 180px;
+    transition: all .25s ease;
+  }
+
+
+  .dropdown {
+    .btn-dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+      transition: all .5s ease;
+
+      .user-data {
+        display: block;
+        margin-left: .5rem;
+        text-shadow: none;
+      }
+
+      &:hover {
+        box-shadow: 0 3px 6px 0 rgba(128, 98, 96, 0.3);
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar {
+    .navbar-left {
+      width: 56px;
+
+      .navbar-brand {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .dropdown {
+      .btn-dropdown {
+        .user-data {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .navbar{
+    .navbar-left{
+      width: 56px;
+    }
+
+  }
+}

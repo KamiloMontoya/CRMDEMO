@@ -1,0 +1,150 @@
+.preloader-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  z-index: 1011;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+  visibility: visible;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.preloader,
+.preloader .lines,
+.preloader .lines .line {
+  width: 80px;
+  position: absolute
+}
+
+.preloader {
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  margin: -30px 0 0 -40px;
+
+  .lines {
+    height: 40px;
+
+    .line {
+      height: 10px;
+      background-color: #000;
+      clip: rect(0, 0, 20px, 0);
+
+      &.line-1 {
+        top: 0;
+        -webkit-animation: slide 2s ease 0s infinite;
+        -moz-animation: slide 2s ease 0s infinite;
+        animation: slide 2s ease 0s infinite
+      }
+
+      &.line-2 {
+        top: 15px;
+        -webkit-animation: slide 2s ease .25s infinite;
+        -moz-animation: slide 2s ease .25s infinite;
+        animation: slide 2s ease .25s infinite
+      }
+
+      &.line-3 {
+        top: 30px;
+        -webkit-animation: slide 2s ease .5s infinite;
+        -moz-animation: slide 2s ease .5s infinite;
+        animation: slide 2s ease .5s infinite
+      }
+    }
+  }
+
+  .loading-text {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    line-height: 10px;
+    height: 10px;
+    -webkit-animation: fade 1s ease 0s infinite;
+    -moz-animation: fade 1s ease 0s infinite;
+    animation: fade 1s ease 0s infinite
+  }
+}
+
+
+@-webkit-keyframes slide {
+  0% {
+      clip: rect(0, 0, 20px, 0)
+  }
+  30%,
+  50% {
+      clip: rect(0, 80px, 20px, 0)
+  }
+  100%,
+  80% {
+      clip: rect(0, 80px, 20px, 80px)
+  }
+}
+@-moz-keyframes slide {
+  0% {
+      clip: rect(0, 0, 20px, 0)
+  }
+  30%,
+  50% {
+      clip: rect(0, 80px, 20px, 0)
+  }
+  100%,
+  80% {
+      clip: rect(0, 80px, 20px, 80px)
+  }
+}
+@keyframes slide {
+  0% {
+      clip: rect(0, 0, 20px, 0)
+  }
+  30%,
+  50% {
+      clip: rect(0, 80px, 20px, 0)
+  }
+  100%,
+  80% {
+      clip: rect(0, 80px, 20px, 80px)
+  }
+}
+
+@-webkit-keyframes fade {
+  0%,
+  100% {
+      opacity: 1
+  }
+  50% {
+      opacity: 0
+  }
+}
+@-moz-keyframes fade {
+  0%,
+  100% {
+      opacity: 1
+  }
+  50% {
+      opacity: 0
+  }
+}
+@keyframes fade {
+  0%,
+  100% {
+      opacity: 1
+  }
+  50% {
+      opacity: 0
+  }
+}

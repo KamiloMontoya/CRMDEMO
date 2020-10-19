@@ -1,0 +1,38 @@
+.containerErrorCenter {
+  height: 100vh;
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;
+}
+.containerLogo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.containerErrorInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  padding-bottom: 120px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 10px #806260;
+
+  width: 100%;
+  font-weight: bold;
+  font-size: 100%;
+}
+.containerErrorPrincipal {
+  display: flex;
+  width: 100%;
+}
+
+.containerErrorImage {
+  margin-right: 20px;
+}
+
+.containerErrorTitle {
+  font-weight: bold;
+  font-size: 200%;
+}

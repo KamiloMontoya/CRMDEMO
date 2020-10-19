@@ -1,0 +1,190 @@
+/* ScrollBar */
+
+.scroll-bar{
+  padding-right: .5rem;
+  overflow-y: auto;
+  &::-webkit-scrollbar{
+    width: 12px;
+    height: 14px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 6px;
+    background-color: #f56629;
+  }
+  &::-webkit-scrollbar-track{
+    border-radius: 6px;
+    border: 2px solid #e5e5e5;
+    padding: 1px;
+  }
+}
+
+
+/* Separator */
+
+.separator-horizontal{
+  position: relative;
+  height: 2rem;
+  &::after{
+    content: "";
+    height: 100%;
+    position: absolute;
+    border-left: 1px solid  #e9e8e9;
+  }
+
+}
+
+/* Overflow Text */
+
+.overflow-text{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Titles */
+
+.title-module {
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: #afafaf;
+  letter-spacing: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #cbcbcb;
+    bottom: 0;
+    margin-left: 0.5rem;
+  }
+  span{
+    color: #606060;
+  }
+}
+
+.title-section{
+  letter-spacing: 2px;
+}
+
+/* Links */
+
+.text-link{
+  color: #f56629;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* Boxes */
+
+.container-shadow{
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+/* Filters */
+
+.filters {
+  margin-top: 1.5rem;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #feeee7;
+  padding: 1rem;
+  border-radius: 10px;
+  label{
+    margin: 0;
+    color: #66615f;
+  }
+}
+
+/* Reset */
+.nav.nav-pills .nav-item{
+  outline: none;
+}
+
+button{
+  outline: none;
+  &:focus{
+    outline: none !important;
+  }
+}
+
+
+/* Spaces */
+
+.m-b-1{
+  margin-bottom: 1rem;
+}
+
+.m-t-1{
+  margin-top: 1rem;
+}
+
+.m-t-2{
+  margin-top: 2rem;
+}
+
+/* Carousel */
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
+  opacity: 1;
+}
+
+.arrow-kuepa {
+  border: solid #d8d8d8;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  &:hover{
+    border: solid #fd6720;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+}
+
+.right-kuepa {
+  transform: rotate(-45deg);
+}
+
+.left-kuepa {
+  transform: rotate(135deg);
+}
+
+.carousel-indicators{
+  bottom: -3rem;
+}
+.carousel-indicators li{
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #d8d8d8;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+  background-color: #f56629;
+}
+
+
+/*Progress Bar */
+
+.bg-success{
+  background: #9dc927 !important;
+}

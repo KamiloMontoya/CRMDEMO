@@ -1,0 +1,35 @@
+.containerWaitingRoom{
+  height: 100vh;
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;
+}
+
+.containerCenter{
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 10px #806260;
+  width: 100%;
+  font-weight: bold;
+  font-size: 100%;
+
+}
+
+.textContainer{
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 80px;
+  margin-bottom: 9%;
+  width: 100%;
+}
+.title{
+  font-size: xxx-large;
+  font-weight: bold;
+}
+.info{
+ font-weight: bold;
+  font-size: medium;
+}

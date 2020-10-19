@@ -1,0 +1,50 @@
+{
+  "loading": "Cargando",
+	"errors": {
+		"404": {
+			"content": "Página no encontrada",
+			"info": "Parece que el enlace al que estás intentando acceder es inválido o no existe,",
+			"description": "vuelve a acceder desde el modulo principal, si el problema persiste, contacta a soporte."
+		}
+	},
+  "screenNotification": {
+		"default": {
+			"title": {
+				"success": "¡Felicitaciones!",
+				"error": "¡Opss!"
+			},
+			"confirm_button": "Ok",
+			"cancel_button": "Cancelar",
+			"processing": {
+				"title": "Procesando",
+				"text": "Por favor espere ..."
+			}
+		}
+	},
+  "login": {
+    "welcome_title": "Ingresar",
+    "form": {
+      "fields": {
+        "alliance": "Alianza",
+        "username": "Nombre de usuario",
+        "password": "Contraseña"
+      },
+      "btn_login": "Iniciar sesión"
+    }
+  },
+  "waiting_room": {
+    "title": "SALA DE ESPERA",
+    "message": "Usted esta siendo redirigido"
+  },
+  "home": {
+    "welcome_title": "Hola {{fullname}}"
+  },
+  "navbar": {
+		"dropdown": {
+			"logout": "Cerrar sesión"
+		}
+	},
+  "forms": {
+    "required": "Este campo es requerido"
+  }
+}

@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  server:
+    image: scaffolding-reactjs:prod
+    build:
+      context: .
+      dockerfile: .docker/webserver/Dockerfile.prod
+    env_file: .env
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - .:/usr/src/app/
