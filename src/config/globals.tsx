@@ -11,6 +11,8 @@ export const default_language = (env.hasOwnProperty('default_language')) ? env['
 export const has_site         = (env.hasOwnProperty('has_site')) ? env['has_site']                : true
 export const secure_home      = (env.hasOwnProperty('secure_home')) ? env['secure_home']          : null
 export const google_analytics = (env.hasOwnProperty('google_analytics')) ? env['google_analytics'] : null
+
+export const sip_config         = (env.hasOwnProperty('sip_config')) ? env['sip_config'] : {}
 //@end
 
 export const secure_home_path = (secure_home && typeof secure_home === 'string') ? `${(secure_home)}` : `/home`

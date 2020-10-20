@@ -49,7 +49,14 @@ touch src/config/env.json
   "main_external_socket": "main_socket",
   "has_site": boolean // Indica si se va a tener rutas para el site
   "secure_home": string // Indica cual es la ruta por defecto para los componentes seguros Ej: /home
-  "google_analytics": string // Identificador del proyecto en Google Analytics Ej: "UA-12312312-1"
+  "google_analytics": string // Identificador del proyecto en Google Analytics Ej: "UA-12312312-1",
+  "sip_config": { // Configuracion por defecto para protocolo de llamadas SIP
+    "debug": false,
+    "ip": "201.184.65.162",
+    "port": "8045",
+    "default_ext": "1032",
+    "password_default_ext": "$newBh8"
+  }
 }
 ```
 
