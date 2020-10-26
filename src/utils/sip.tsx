@@ -16,10 +16,10 @@ type SIPStructure = {
 }
 
 type HandlersStructure = {
-  progress?: () => void | any,
-  failed?: () => void | any,
-  ended?: () => void | any,
-  confirmed?: () => void | any,
+  progress?:  any,
+  failed?:  any,
+  ended?:  any,
+  confirmed?:  any,
 }
 
 class SIPUtil {

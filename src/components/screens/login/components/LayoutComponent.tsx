@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next'
 //@import components
 import {AuthLayout} from 'app_components/layouts/auth'
 import LoginModule from 'app_components/modules/login'
+
+import SipModule from 'app_components/modules/sip'
 //@end
 
 function LayoutComponent(props: any) {
@@ -15,17 +17,21 @@ function LayoutComponent(props: any) {
   return(
     <AuthLayout>
       <div className='col-md-4 mx-auto py-5'>
-        <h2 className='mb-3'>{t('login.welcome_title')}</h2>
-        {props.error && (
-          <div className='alert alert-danger mb-3' role='alert'>
-            {props.error}
-          </div>
-        )}
-        <LoginModule
-          onSubmit={props.onHandleLogin}
-        />
+        <SipModule/>
       </div>
     </AuthLayout>
+
+    // <AuthLayout>
+    //   <div className='col-md-4 mx-auto py-5'>
+    //     <h2 className='mb-3'>{t('login.welcome_title')}</h2>
+    //     {props.error && (
+    //       <div className='alert alert-danger mb-3' role='alert'>
+    //         {props.error}
+    //       </div>
+    //     )}
+    //     <SipModule/>
+    //   </div>
+    // </AuthLayout>
   )
 }
 
